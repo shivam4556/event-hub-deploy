@@ -5,9 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "dev":"nodemon server.js"
   },
-  "author": "Deepak Chopra",
+  "author": "Manjot Singh",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
