@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "dev":"nodemon server.js"
+    "dev": "nodemon server.js"
   },
   "author": "Manjot Singh",
   "license": "ISC",
@@ -18,6 +18,6 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.15",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.7"
   }
 }
