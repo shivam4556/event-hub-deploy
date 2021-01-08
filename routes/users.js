@@ -66,7 +66,7 @@ router.post("/login", function (req, res) {
         const isMatch = await bcrypt.compare(password, foundUser.password);
 
         if (isMatch) {
-          res.send({ found: true, id: foundUser._id });
+          res.send({ found: "success", id: foundUser._id });
         } else {
           res.send({ found: "incorrect" });
         }

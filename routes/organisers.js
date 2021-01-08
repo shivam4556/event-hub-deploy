@@ -6,6 +6,8 @@ const Organiser = require("../models/Organiser");
 router.post("/login", function (req, res) {
   let email = req.body.email;
   let password = req.body.password;
+  console.log(email);
+  console.log(password);
 
   Organiser.findOne({ email: email }, async function (err, foundCompany) {
     if (err) {
@@ -15,7 +17,7 @@ router.post("/login", function (req, res) {
         const isMatch = await bcrypt.compare(password, foundCompany.password);
 
         if (isMatch) {
-          res.send({ found: true, id: foundCompany._id });
+          res.send({ found: "success", id: foundCompany._id });
         } else {
           res.send({ found: "incorrect" });
         }
