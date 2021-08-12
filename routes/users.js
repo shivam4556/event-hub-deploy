@@ -25,7 +25,6 @@ router.get("/profile/:id", function (req, res) {
     console.log(err);
   }
 });
-
 router.post("/register", function (req, res) {
   User.find({ email: req.body.email }, async function (err, foundUsers) {
     if (foundUsers.length === 0 || !foundUsers) {
