@@ -1,6 +1,8 @@
 # EventHubFinal
 EventHub-Platform to filter the events according to the requirement
 
+Check the Website at [EventHub](https://eventhub.herokuapp.com/user/)
+
 To Initialise the Project-
 
 1.Fork the Repo
